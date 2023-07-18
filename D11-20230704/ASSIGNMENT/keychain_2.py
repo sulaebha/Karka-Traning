@@ -5,7 +5,7 @@ print(Menu)
 
 total_keychain=0
 price_per_keychain=1.00
-tax=8.25
+tax=0.0825
 tax_base_shipping=5.00
 per_keychain_shipping=1.00
 
@@ -29,21 +29,16 @@ def remove_keychain(total_keychain):
 
     remove_key=int(input(f"You have {total_keychain} ,How many you want to remove? "))
     total_keychain=total_keychain-remove_key   
-    print(f"You now have {total_keychain} keychains.")
     # key_condition()
     # option2=("REMOVE KEYCHAINS ")
-    return  0
+    return  total_keychain,remove_key
 
 def view_keychain(total_keychain):
-    print(f"You have {total_keychain} keychains cost ${price_per_keychain} each \n ")
-    # print("tax=8.25%")
-    print("tax_base_shipping=$5.00")
-    print("per_keychain_shipping=$1.00")
-    percentage=0.0825*total_keychain
-    print(f"Total cost is ${(price_per_keychain*total_keychain)+tax_base_shipping+percentage}\n")
+   
+    percentage=tax*total_keychain
     # key_conditio
     # option3=("VIEW ORDER ")
-    return 
+    return total_keychain,percentage
 
 def check_keychain():
     print("Check out")
@@ -62,10 +57,19 @@ while True:
     # print(Menu) 
     elif choice==2:
         remove_keychain(total_keychain)  
+        print(f"You now have {total_keychain} keychains.")
+        
+
    
 
     elif choice==3:
-        view_keychain(total_keychain)  
+         print(f"You have {total_keychain} keychains cost ${price_per_keychain} each \n ")
+    # print("tax=8.25%")  
+         print("tax_base_shipping=$5.00")
+         print("per_keychain_shipping=$1.00")
+         view_keychain(total_keychain)  
+         print(f"Total cost is ${(price_per_keychain*total_keychain)+tax_base_shipping+percentage}\n")
+
 
 
     elif choice==4:
