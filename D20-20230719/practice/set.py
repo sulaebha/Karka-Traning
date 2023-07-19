@@ -4,15 +4,16 @@
 # print(set_)
 
 # read
-file=open ("/home/sulaebha/karka.txt",'r')
-print(file.read())
+file=open("/home/sulaebha/karka.txt",'r')
+# print(file.read())
 # print(file)
-
+for line in file:
+    print(line.split())
 # for line in file:
 #     print(line)
 
     # write 
 
-files=open ("/home/sulaebha/karka.txt",'a')
-files.write('hii\ni am sulaebha \nfrom tirunelveli')
-files.close()
+# files=open ("/home/sulaebha/karka.txt",'w')
+# files.write('hii\ni am sulaebha \nfrom tirunelveli')
+# files.close()
