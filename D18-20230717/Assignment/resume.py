@@ -1,16 +1,26 @@
 my_resume={
     "Name":"Sulaebha M",
+    
     "E-mail":"rosesulaebha@gmail.com",
+    
     "Mobile-no":9769243278,
+    
     "Soft Skills":['problem solving','Time Management','Teamwork','Dicision Making'],
+    
     "Hard Skills":['python','html','css','MS-office'],
-    "Educational Qualification":[{'Qualification':'SSLC','School name':'SHSS','passedout_year':2016,'percentage':88},
-                                 {'Qualification':' HSC','School name':'GHSS','passedout_year':2018,'percentage':84},
-                                 {'Qualification':'B.E','College name':'AVCE','passedout_year':2022,'percentage':80}],
+
+    "Educational Qualification":[{'Qualification':'SSLC','Institute':'SHSS','passedout_year':2016,'percentage':88},
+                                 {'Qualification':' HSC','Institute':'GHSS','passedout_year':2018,'percentage':84},
+                                 {'Qualification':'B.E','Institute':'AVCE','passedout_year':2022,'percentage':80}],
 
     "Projects":"BRAIN TUMOR IDENTIFICATION AND CLASIFICATION OF MRI USING DEEP LEARNING TECHNIQUES",
-    "Experience":{'Company name':'code genie solutions','location':'tirunelveli','duration':'1 month'},
+
+    "Experience":[{'Company name':'code genie solutions','location':'tirunelveli','duration':1.0,'role':"Software traniee"},
+                  {'Company name':'Global solutions','location':'coimbature','duration':2.1,'role':"Software Engineer"},
+                  {'Company name':'infosys','location':'chennai','duration':1.3,'role':"Software Engineer"}],
+
     "Hobbies":['using mobile','listening music','coding'],
+
     "Personal Details":{"Father's name":"Mr Mahalingam","Father's Occupation":"Coolie worker",
                         "Languages known":['tamil','english'],"DOB":"29-11-2001","Gender":"Female",
                         "Marital Status":"Unmarried",
@@ -28,10 +38,10 @@ for skill in my_resume["Hard Skills"]:
 # print(my_resume["Personal Details"]["Address"])
 # def resume():
 for content in my_resume["Educational Qualification"]:
-      percentage=content["percentage"]
-      print(percentage,"\n")
-      Passesdout_year=content["passedout_year"]
-      print(Passesdout_year ,"\n")
+      # percentage=content["percentage"]
+      print(content["percentage"],"\n")
+      # Passesdout_year=content["passedout_year"]
+      print(content["passedout_year"] ,"\n")
       break
      
 # print(personal)
