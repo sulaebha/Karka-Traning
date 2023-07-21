@@ -1,1 +1,0 @@
-[{'month': 1, 'unit consumed': 100, 'bill_amount': 200}, {'month': 2, 'unit consumed': 150, 'bill_amount': 300}, {'month': 3, 'unit consumed': 300, 'bill_amount': 1500}, {'month': 4, 'unit consumed': 400, 'bill_amount': 2000}]
