@@ -10,7 +10,7 @@ dup_value_list.sort()
 
 for value in dup_value_list:
 #     # print(value)
-   if  value!=value+1:
+   if value not in original_value_list:
       original_value_list.append(value)
 
-   print(original_value_list)        
+print(original_value_list)        
