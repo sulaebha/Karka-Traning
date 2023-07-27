@@ -4,4 +4,4 @@ Number3=float(input("Enter the third number: "))
 Total=(Number1+Number2+Number3)/2
 # dum_cal=int(Total)
 # print(type(Total))
-print(f"Number1+Number2+Number3 is......{Total}")
+print(f"Number1+Number2+Number3/2  is......{Total}")

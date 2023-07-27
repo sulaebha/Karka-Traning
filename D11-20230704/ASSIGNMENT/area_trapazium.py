@@ -3,7 +3,7 @@
 base_side=int(input("Enter the base side value:  "))
 top_side=int(input("Enter the top side value:  "))
 height=int(input("Enter the height:  "))
-sum_of_side=base_side*top_side
+sum_of_side=base_side+top_side
 print(sum_of_side)
 def area_trapezium():
     area=(sum_of_side)*(height)*(1/2)

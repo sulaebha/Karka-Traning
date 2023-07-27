@@ -1,0 +1,18 @@
+from datetime import timedelta
+from datetime import datetime
+
+difference=int(input("enter the day difference: "))
+day=input("enter the date :")
+
+
+
+# curr_date=date.today() 
+# print(curr_date)
+b=datetime.strptime(day,"%d %B %Y")
+
+# final_date=curr_date+timedelta(days=difference)
+
+final_date=b+timedelta(days=difference)
+print(final_date)
+
+
