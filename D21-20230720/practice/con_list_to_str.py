@@ -1,3 +1,4 @@
+from pprint import pprint
 import json
 
 eb_bill_details=[{'month': 1, 'unit consumed': 100, 'bill_amount': 200}, 
@@ -21,18 +22,22 @@ eb_bill_details=[{'month': 1, 'unit consumed': 100, 'bill_amount': 200},
 #     return str1
 
 eb_string=str(eb_bill_details)
-
+# eb_bill_details_json=json.dumps(eb_string)
+# eb_bill_detail_json=json.loads(eb_bill_details_json)
+# pprint(eb_bill_detail_json)
 # eb_bill_details_json=json.dumps(eb_string)
 # print(eb_bill_details_json)
 method=input("enter the covertion method:")
 
 if method=="json"and"Json"and"JSON"and"JsOn"and"JSon":
     eb_bill_details_json=json.dumps(eb_string)
-    print(eb_bill_details_json)
+    # eb_bill_detail_json=json.loads(eb_bill_details_json)
+    # pprint(eb_bill_detail_json)
+    pprint(eb_bill_details_json)
 
 elif method=="dict":    
     eb_bill_details_new=str(eb_bill_details)
-    print(eb_bill_details_new)
+    pprint(eb_bill_details_new,depth=2,indent=10)
 
 # print(eb_string)
 # print(listToString(eb_bill_details))
